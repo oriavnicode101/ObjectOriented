@@ -1,5 +1,4 @@
 from League import League
-from Team import Team
 
 names = []
 while True: #User inputs the names for the league
@@ -9,3 +8,5 @@ while True: #User inputs the names for the league
     names.append(name)
 
 
+my_league = League(names)
+my_league.print()

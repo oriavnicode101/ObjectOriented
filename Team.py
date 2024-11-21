@@ -18,6 +18,7 @@ class Team:
         :return: none
         """
         self.name = name
+
     def get_name(self):
         """
         returns the name of the team
