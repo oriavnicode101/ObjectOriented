@@ -33,6 +33,10 @@ class Team:
         :param bad: bad_points
         :return: none
         """
+        self.good_points+=good
+        self.bad_points+=bad
+
+
         if good > bad:
             self.win+=1
         elif bad > good:

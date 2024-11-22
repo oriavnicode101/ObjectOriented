@@ -25,16 +25,18 @@ class League:
         :param group2: team 2
         :return: true if the names of the teams are listed in the League
         """
-        counter = 0
-        for team in self.teams:
-            if team.get_name() != group1 or team.get_name() != group2:
-                counter+=1
-        if counter == len(self.teams):
+        team_dict = {team.get_name(): team for team in self.teams}
+
+        # Check if both teams exist
+        if group1 not in team_dict or group2 not in team_dict:
             return False
-        else:
-            group1.game(points1,points2)
-            group2.game(points2,points1)
-            return True
+
+        # Update both teams' statistics
+        team_dict[group1].game(points1, points2)
+        team_dict[group2].game(points2, points1)
+
+        return True
+
 
     def print(self):
         """

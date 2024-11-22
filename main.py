@@ -22,6 +22,9 @@ while True:
 
     if result:
         print("game recorded!")
+    else:
+        print("wrong teams names try again")
+        continue
 
     my_league.print()
 
