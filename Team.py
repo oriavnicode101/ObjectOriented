@@ -56,5 +56,5 @@ class Team:
         prints all the information of the team
         :return:
         """
-        print(f"name:{self.name}|good points:{self.good_points}bad points:{self.bad_points}wins:{self.win}losses:{self.lose}draws:{self.draw}number of games:{self.lose + self.win + self.draw}number of points:{self.points()}")
+        print(f"name: {self.name} | good points: {self.good_points} bad points: {self.bad_points} wins: {self.win} losses: {self.lose} draws: {self.draw} number of games: {self.lose + self.win + self.draw} number of points: {self.points()}")
 
